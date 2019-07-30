@@ -1,0 +1,24 @@
+{
+    "type": "postgres",
+    "host": "localhost",
+    "port": 5432,
+    "username": "test",
+    "password": "test",
+    "database": "photo_app",
+    "synchronize": false,
+    "migrationsRun": true,
+    "logging": false,
+    "entities": [
+       "src/models/**/*.ts"
+    ],
+    "migrations": [
+       "src/migration/**/*.ts"
+    ],
+    "subscribers": [
+       "src/subscriber/**/*.ts"
+    ],
+    "migrationsTableName": "custom_migration_table",
+    "cli": {
+      "migrationsDir": "migration"
+  }
+}
